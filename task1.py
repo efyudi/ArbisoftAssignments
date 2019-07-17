@@ -1,11 +1,9 @@
 
 def maxNumber(numberA, numberB):
-    if(numberA > numberB):
-        return numberA
-    else:
-        return numberB
+    return numberA if numberA > numberB else numberB
 
-numberA = int(input("Enter 1st Number : "))
-numberB = int(input("Enter 2nd Number : "))
+if __name__ == "__main__":
+    numberA = int(input("Enter 1st Number : "))
+    numberB = int(input("Enter 2nd Number : "))
 
-print("Max Number is : ", maxNumber(numberA,numberB))
+    print("Max Number is : ", maxNumber(numberA,numberB))
